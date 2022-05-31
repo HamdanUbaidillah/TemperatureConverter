@@ -83,6 +83,7 @@ h1 {
   line-height: 15px;
   padding-left: 7px;
   font-size: 15px;
+  overflow: hidden;
   font-family: "Roboto Mono", monospace;
 }
 

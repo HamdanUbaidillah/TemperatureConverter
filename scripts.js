@@ -3,9 +3,10 @@ const input = document.querySelector(".input");
 const output = document.querySelector(".output");
 
 button.addEventListener("click", () => {
-  let result = (input.value * 9) / 5 + 32;
-  output.innerHTML = result;
-  if (input.value == "") {
+  if (input.value === "" || isNaN(input.value)) {
     output.innerHTML = "";
+  } else {
+    let result = (input.value * 9) / 5 + 32;
+    output.innerHTML = result;
   }
 });
